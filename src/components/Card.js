@@ -22,7 +22,7 @@ export const Card = (props) => {
           {isPlaying ? console.log("Audio isn't playing") : <span className="span-unmute">Unmute</span>}
         </button>
 
-        <video className="background-video" loop muted autoPlay>
+        <video className="background-video" loop muted autoPlay webkit-playsinline>
           <source src={props.video} type="video/mp4"></source>
         </video>
         <div className="label-name">
